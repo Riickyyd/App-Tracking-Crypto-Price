@@ -4,6 +4,8 @@ import datetime
 from datetime import datetime
 import pytz
 import numpy as np
+from PIL import Image
+
 
 st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
@@ -80,7 +82,6 @@ t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 #create a linechart
-from PIL import Image
 image = Image.open('sunrise.jpg')
 
 st.image(image, caption='Sunrise by the mountains')
