@@ -76,7 +76,7 @@ col5.metric(col5_selection, col5_price, col5_percent)
 col6.metric(col6_selection, col6_price, col6_percent)
 
 #update real time
-t = datetime.now(tzinfo=pytz.timezone("EST")).strftime("%H:%M:%S")
+t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 
