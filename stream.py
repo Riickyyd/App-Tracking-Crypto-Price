@@ -28,14 +28,9 @@ col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).inde
 col2_selection = st.sidebar.selectbox('Price 2', df.symbol, list(df.symbol).index('ETHUSDT'))
 col3_selection = st.sidebar.selectbox('Price 3', df.symbol, list(df.symbol).index('NEARUSDT'))
 col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col5_selection = st.sidebar.selectbox('Price 5', df.symbol, list(df.symbol).index('BGBUSDT'))
-col6_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col7_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col8_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col9_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col10_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col11_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
-col12_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
+col5_selection = st.sidebar.selectbox('Price 5', df.symbol, list(df.symbol).index('BNBUSDT'))
+col6_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SANDUSDT'))
+
 
 
 
