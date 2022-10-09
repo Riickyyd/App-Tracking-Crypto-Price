@@ -14,10 +14,10 @@ def round_value(input_value):
     if input_value.values > 1:
         a = float(round(input_value, 2))
     else:
-        a = float(round(input_value, 8))
+        a = float(round(input_value, 5))
     return a
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 # Widget (Cryptocurrency selection box)
 col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT') )
