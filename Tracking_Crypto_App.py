@@ -4,7 +4,6 @@ import datetime
 from datetime import datetime
 import pytz
 import numpy as np
-from PIL import Image
 
 
 st.markdown('# **Tracking Cryptocurrency Price**')
@@ -81,10 +80,19 @@ col6.metric(col6_selection, col6_price, col6_percent)
 t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
-#create a linechart
-image = Image.open('sunrise.jpg')
+#create a barchart
+chart_data = pd.DataFrame(
+    np.random.randn(10, 3),
+    columns=["a", "b", "c"])
 
-st.image(image, caption='Sunrise by the mountains')
+st.bar_chart(chart_data)
 
+#create a linegraph
+
+chart_data = pd.DataFrame(
+    np.random.randn(10, 3),
+    columns=['a'])
+
+st.area_chart(chart_data)
 
 st.info("Referenced by Mr.Data Professor")
