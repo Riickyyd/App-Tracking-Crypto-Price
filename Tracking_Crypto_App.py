@@ -13,6 +13,8 @@ st.header('**Selected Price**')
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
 
+df_2 = pd.read_json('https://min-api.cryptocompare.com/data/generateAvg?fsym=BTC&tsym=USD&e=Kraken')
+
 # Custom function for rounding values
 def round_value(input_value):
     if input_value.values > 1:
@@ -81,7 +83,7 @@ st.write('Update at: ', t)
 
 #create a linechart
 chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
+    np.random.randn(10,10),
     columns=['a', 'b', 'c'])
 st.area_chart(chart_data)
 
