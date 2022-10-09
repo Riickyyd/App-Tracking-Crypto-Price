@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import 
+import datetime
+from datetime import datetime
 
 
 st.markdown('''# **Tracking Cryptocurrency Price**
@@ -58,4 +59,4 @@ st.dataframe(df)
 st.info("Referenced by Mr.Data Professor")
 
 
-st.write('**Updated at**')
+st.header('**Update at**')
