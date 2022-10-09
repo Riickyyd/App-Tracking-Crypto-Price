@@ -23,7 +23,7 @@ col1, col2, col3, col4 = st.columns(4)
 col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT'))
 col2_selection = st.sidebar.selectbox('Price 2', df.symbol, list(df.symbol).index('ETHUSDT'))
 col3_selection = st.sidebar.selectbox('Price 3', df.symbol, list(df.symbol).index('NEARUSDT'))
-col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLSDT'))
+col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
 
 
 # DataFrame of selected Cryptocurrency
