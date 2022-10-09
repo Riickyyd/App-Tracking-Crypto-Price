@@ -20,14 +20,6 @@ def round_value(input_value):
         a = float(round(input_value, 5))
     return a
 
-# Custom function for rounding values of percent
-def round_value(input_percent):
-    if input_value.values > 1:
-        b = float(round(input_percent, 2))
-    else:
-        b = float(round(input_percent, 5))
-    return b
-
 
 col1, col2, col3 = st.columns(3)
 col4, col5, col6 = st.columns(3)
@@ -64,7 +56,7 @@ col6_price = round_value(col6_df.weightedAvgPrice)
 
 
 # Select the priceChangePercent column
-col1_percent = f'{float(col1_df.priceChangePercent)}%'
+col1_percent = f'{float(col1_df.priceChangePercent), round(2)}%'
 col2_percent = f'{float(col2_df.priceChangePercent)}%'
 col3_percent = f'{float(col3_df.priceChangePercent)}%'
 col4_percent = f'{float(col4_df.priceChangePercent)}%'
