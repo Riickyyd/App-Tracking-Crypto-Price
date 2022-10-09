@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.markdown('''# **Tracking Cryptocurrency Price**
-Powered by Ricky.
-''')
+Powered by Ricky ''')
 
 st.header('**Selected Price**')
 
