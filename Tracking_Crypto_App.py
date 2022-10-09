@@ -4,7 +4,11 @@ import datetime
 from datetime import datetime
 import pytz
 
-backgroundColor="#E7DFC7"
+primaryColor="#d33682"
+backgroundColor="#002b36"
+secondaryBackgroundColor="#586e75"
+font="sans serif"
+
 st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
 
