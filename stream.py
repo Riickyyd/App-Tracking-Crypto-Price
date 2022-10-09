@@ -54,7 +54,7 @@ col2.metric(col2_selection, col2_price, col2_percent)
 
 
 st.header('**All Price**')
-st.dataframe(df)
+
 
 st.info("Referenced by Mr.Data Professor")
 
