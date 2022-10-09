@@ -52,7 +52,7 @@ col1.metric(col1_selection, col1_price, col1_percent)
 col2.metric(col2_selection, col2_price, col2_percent)
 
 #update real time
-t = st.time(datetime.now().strftime("%H:%M:%S"))
+t = datetime.now().strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 
