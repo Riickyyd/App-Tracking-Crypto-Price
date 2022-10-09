@@ -46,6 +46,8 @@ col2_percent = f'{float(col2_df.priceChangePercent)}%'
 
 # Create a metrics price box
 col1.metric(col1_selection, col1_price, col1_percent)
+col2.metric(col2_selection, col2_price, col2_percent)
+
 
 
 st.header('**All Price**')
