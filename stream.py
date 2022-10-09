@@ -7,7 +7,7 @@ Powered by Ricky ''')
 st.header('**Selected Price**')
 
 # Load market data from Binance API
-df = pd.read_json('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR')
+df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
 
 # Custom function for rounding values
 def round_value(input_value):
@@ -20,7 +20,7 @@ def round_value(input_value):
 col1, col2, col3 = st.columns(3)
 
 # Widget (Cryptocurrency selection box)
-col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('USD') )
+col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT') )
 
 
 # DataFrame of selected Cryptocurrency
