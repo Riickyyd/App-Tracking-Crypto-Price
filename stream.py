@@ -12,6 +12,10 @@ st.header('**Selected Price**')
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
 
+#update by time
+def info():
+    time = datetime.now().strftime("%H:%M:%S")
+
 # Custom function for rounding values
 def round_value(input_value):
     if input_value.values > 1:
@@ -21,6 +25,8 @@ def round_value(input_value):
     return a
 
 col1, col2, col3, col4 = st.columns(4)
+
+frame_head.after(100, info)
 
 # Widget (Cryptocurrency selection box)
 col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT'))
