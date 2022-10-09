@@ -84,7 +84,7 @@ st.write('Update at: ', t)
 #create a linechart
 chart_data = pd.DataFrame(
     np.(11, 3),
-    columns=['a', 'b', 'c'])
+    columns=['a'])
 
 st.area_chart(chart_data)
 
