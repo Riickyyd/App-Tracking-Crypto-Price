@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import datetime
 from datetime import datetime
+import pytz
 
 
 st.markdown('''# **Tracking Cryptocurrency Price**
@@ -75,7 +76,7 @@ col5.metric(col5_selection, col5_price, col5_percent)
 col6.metric(col6_selection, col6_price, col6_percent)
 
 #update real time
-t = datetime.now().strftime("%H:%M:%S")
+t = datetime.now().strftime("%H:%M:%S").tzinfo=pytz.timezone("UCT+7")
 st.write('Update at: ', t)
 
 
