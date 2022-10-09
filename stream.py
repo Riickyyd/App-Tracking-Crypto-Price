@@ -20,7 +20,10 @@ def round_value(input_value):
 col1, col2, col3, col4 = st.columns(4)
 
 # Widget (Cryptocurrency selection box)
-col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT') )
+col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT'))
+col2_selection = st.sidebar.selectbox('Price 2', df.symbol, list(df.symbol).index('ETHUSDT'))
+col3_selection = st.sidebar.selectbox('Price 3', df.symbol, list(df.symbol).index('NEARUSDT'))
+col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLSDT'))
 
 
 # DataFrame of selected Cryptocurrency
