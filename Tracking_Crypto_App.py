@@ -82,7 +82,10 @@ t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 #create a linechart
-st.area_chart(data= df.VOLUME24HOUR, x=10, y=10, width=10, height=10, use_container_width=True)
+chart_data = pd.DataFrame(
+    np.VOLUME24HOUR (10, 3),
+    columns=['a'])
 
+st.area_chart(chart_data)
 
 st.info("Referenced by Mr.Data Professor")
