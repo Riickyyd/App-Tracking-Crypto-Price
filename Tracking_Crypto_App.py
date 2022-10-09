@@ -3,13 +3,7 @@ import pandas as pd
 import datetime
 from datetime import datetime
 import pytz
-
-[theme]
-primaryColor="#6eb52f"
-backgroundColor="#f0f0f5"
-secondaryBackgroundColor="#e0e0ef"
-textColor="#262730"
-font="sans serif"
+import numpy as np
 
 st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
@@ -84,6 +78,12 @@ col6.metric(col6_selection, col6_price, col6_percent)
 #update real time
 t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
+
+#create a linechart
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
+st.area_chart(chart_data)
 
 
 st.info("Referenced by Mr.Data Professor")
