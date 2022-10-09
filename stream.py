@@ -29,7 +29,7 @@ col2_selection = st.sidebar.selectbox('Price 2', df.symbol, list(df.symbol).inde
 col3_selection = st.sidebar.selectbox('Price 3', df.symbol, list(df.symbol).index('NEARUSDT'))
 col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SOLUSDT'))
 col5_selection = st.sidebar.selectbox('Price 5', df.symbol, list(df.symbol).index('BNBUSDT'))
-col6_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('SANDUSDT'))
+col6_selection = st.sidebar.selectbox('Price 6', df.symbol, list(df.symbol).index('SANDUSDT'))
 
 
 
@@ -37,30 +37,44 @@ col6_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).inde
 # DataFrame of selected Cryptocurrency
 col1_df = df[df.symbol == col1_selection]
 col2_df = df[df.symbol == col2_selection]
+col3_df = df[df.symbol == col3_selection]
+col4_df = df[df.symbol == col4_selection]
+col5_df = df[df.symbol == col5_selection]
+col6_df = df[df.symbol == col6_selection]
 
 
 
 # Apply a custom function to conditionally round values
 col1_price = round_value(col1_df.weightedAvgPrice)
 col2_price = round_value(col2_df.weightedAvgPrice)
+col3_price = round_value(col3_df.weightedAvgPrice)
+col4_price = round_value(col4_df.weightedAvgPrice)
+col5_price = round_value(col5_df.weightedAvgPrice)
+col6_price = round_value(col6_df.weightedAvgPrice)
 
 
 
 # Select the priceChangePercent column
 col1_percent = f'{float(col1_df.priceChangePercent)}%'
 col2_percent = f'{float(col2_df.priceChangePercent)}%'
+col3_percent = f'{float(col3_df.priceChangePercent)}%'
+col4_percent = f'{float(col4_df.priceChangePercent)}%'
+col5_percent = f'{float(col5_df.priceChangePercent)}%'
+col6_percent = f'{float(col6_df.priceChangePercent)}%'
 
 
 
 # Create a metrics price box
 col1.metric(col1_selection, col1_price, col1_percent)
 col2.metric(col2_selection, col2_price, col2_percent)
+col3.metric(col3_selection, col3_price, col3_percent)
+col4.metric(col4_selection, col4_price, col4_percent)
+col5.metric(col5_selection, col5_price, col5_percent)
+col6.metric(col6_selection, col6_price, col6_percent)
 
 #update real time
 t = datetime.now().strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
-
-st.snow()
 
 st.info("Referenced by Mr.Data Professor")
