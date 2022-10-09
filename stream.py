@@ -27,7 +27,7 @@ col1, col2, col3 = st.columns(3)
 col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT'))
 col2_selection = st.sidebar.selectbox('Price 2', df.symbol, list(df.symbol).index('ETHUSDT'))
 col3_selection = st.sidebar.selectbox('Price 3', df.symbol, list(df.symbol).index('NEARUSDT'))
-col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('USDT'))
+col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).index('FTMUSDT'))
 col5_selection = st.sidebar.selectbox('Price 5', df.symbol, list(df.symbol).index('BNBUSDT'))
 col6_selection = st.sidebar.selectbox('Price 6', df.symbol, list(df.symbol).index('SANDUSDT'))
 
