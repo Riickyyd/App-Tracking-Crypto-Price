@@ -56,7 +56,7 @@ col6_price = round_value(col6_df.weightedAvgPrice)
 
 
 # Select the priceChangePercent column
-col1_percent = f'{float(col1_df.priceChangePercent), 2}%'
+col1_percent = f'{float(col1_df.priceChangePercent, round(2))}%'
 col2_percent = f'{float(col2_df.priceChangePercent)}%'
 col3_percent = f'{float(col3_df.priceChangePercent)}%'
 col4_percent = f'{float(col4_df.priceChangePercent)}%'
