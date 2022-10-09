@@ -59,6 +59,6 @@ st.dataframe(df)
 st.info("Referenced by Mr.Data Professor")
 
 #update real time
-t = st.time_input(datetime.now)
+t = st.time_input(datetime.now().strftime("%H:%M:%S"))
 st.write('Update at: ', t)
 
