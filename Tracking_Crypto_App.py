@@ -83,7 +83,7 @@ st.write('Update at: ', t)
 
 #create a linechart
 chart_data = pd.DataFrame(
-    np.VOLUME24HOUR (10, 3),
+    np.weightedAvgPrice (10, 3),
     columns=['a'])
 
 st.area_chart(chart_data)
