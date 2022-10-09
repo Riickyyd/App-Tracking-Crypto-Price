@@ -5,8 +5,8 @@ from datetime import datetime
 import pytz
 
 
-st.markdown('''# **Tracking Cryptocurrency Price**
-Powered by Ricky ''')
+st.markdown('# **Tracking Cryptocurrency Price**')
+st.markdown('Powered by Ricky', fg = yellow)
 
 st.header('**Selected Price**')
 
