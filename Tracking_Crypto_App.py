@@ -4,9 +4,9 @@ import datetime
 from datetime import datetime
 import pytz
 
-
+backgroundColor="#E7DFC7"
 st.markdown('# **Tracking Cryptocurrency Price**')
-st.markdown('Powered by Ricky', fg = yellow)
+st.markdown('Powered by Ricky')
 
 st.header('**Selected Price**')
 
