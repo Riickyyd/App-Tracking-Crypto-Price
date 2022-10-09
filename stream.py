@@ -28,6 +28,8 @@ col4_selection = st.sidebar.selectbox('Price 4', df.symbol, list(df.symbol).inde
 
 # DataFrame of selected Cryptocurrency
 col1_df = df[df.symbol == col1_selection]
+col2_df = df[df.symbol == col2_selection]
+
 
 
 # Apply a custom function to conditionally round values
