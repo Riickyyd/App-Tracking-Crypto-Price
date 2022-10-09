@@ -40,6 +40,8 @@ col2_price = round_value(col2_df.weightedAvgPrice)
 
 # Select the priceChangePercent column
 col1_percent = f'{float(col1_df.priceChangePercent)}%'
+col2_percent = f'{float(col2_df.priceChangePercent)}%'
+
 
 
 # Create a metrics price box
