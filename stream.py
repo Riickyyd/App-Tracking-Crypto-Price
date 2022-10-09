@@ -22,7 +22,6 @@ def round_value(input_value):
 
 col1, col2, col3, col4 = st.columns(4)
 
-refresher(1)
 
 # Widget (Cryptocurrency selection box)
 col1_selection = st.sidebar.selectbox('Price 1', df.symbol, list(df.symbol).index('BTCUSDT'))
@@ -57,5 +56,7 @@ col2.metric(col2_selection, col2_price, col2_percent)
 t = datetime.now().strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
+
+st.snow()
 
 st.info("Referenced by Mr.Data Professor")
