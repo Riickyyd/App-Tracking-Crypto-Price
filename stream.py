@@ -34,6 +34,8 @@ col2_df = df[df.symbol == col2_selection]
 
 # Apply a custom function to conditionally round values
 col1_price = round_value(col1_df.weightedAvgPrice)
+col2_price = round_value(col2_df.weightedAvgPrice)
+
 
 
 # Select the priceChangePercent column
