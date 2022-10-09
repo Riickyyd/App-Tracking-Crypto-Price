@@ -91,7 +91,7 @@ st.bar_chart(chart_data)
 
 chart_data = pd.DataFrame(
     np.random.randn(10, 3),
-    columns=['a'])
+    columns=['a', 'b', 'c'])
 
 st.area_chart(chart_data)
 
