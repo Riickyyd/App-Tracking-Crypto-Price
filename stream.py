@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import 
+
 
 st.markdown('''# **Tracking Cryptocurrency Price**
 Powered by Ricky ''')
@@ -54,3 +56,6 @@ st.header('**All Price**')
 st.dataframe(df)
 
 st.info("Referenced by Mr.Data Professor")
+
+
+st.header('**Updated at: 
