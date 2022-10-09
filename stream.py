@@ -21,6 +21,7 @@ def round_value(input_value):
     return a
 
 col1, col2, col3 = st.columns(3)
+col4, col5, col6 = st.columns(3)
 
 
 # Widget (Cryptocurrency selection box)
