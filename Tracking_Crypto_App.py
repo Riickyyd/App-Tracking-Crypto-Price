@@ -6,7 +6,7 @@ import pytz
 
 
 st.markdown('# **Tracking Cryptocurrency Price**')
-st.markdown('Powered by Ricky' , textColor="#E7DFC7")
+st.markdown('Powered by Ricky')
 
 st.header('**Selected Price**')
 
