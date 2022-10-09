@@ -80,5 +80,11 @@ t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 #create a linechart
+chart_data =
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c']
+
+st.area_chart(chart_data)
+
 
 st.info("Referenced by Mr.Data Professor")
