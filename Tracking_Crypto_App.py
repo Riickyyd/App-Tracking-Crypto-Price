@@ -80,10 +80,5 @@ t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 #create a linechart
-chart_data = pd.DataFrame(
-    np.weightedAvgPrice(11, 3),
-    columns=['a'])
-
-st.area_chart(chart_data)
 
 st.info("Referenced by Mr.Data Professor")
