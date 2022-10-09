@@ -51,14 +51,9 @@ col2_percent = f'{float(col2_df.priceChangePercent)}%'
 col1.metric(col1_selection, col1_price, col1_percent)
 col2.metric(col2_selection, col2_price, col2_percent)
 
-
-
-st.header('**All Price**')
-
-
-st.info("Referenced by Mr.Data Professor")
-
 #update real time
 t = st.time_input(datetime.now().strftime("%H:%M:%S"))
 st.write('Update at: ', t)
 
+
+st.info("Referenced by Mr.Data Professor")
