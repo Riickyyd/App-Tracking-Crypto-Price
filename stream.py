@@ -55,13 +55,14 @@ col5_price = round_value(col5_df.weightedAvgPrice)
 col6_price = round_value(col6_df.weightedAvgPrice)
 
 
-# Select the priceChangePercent column
+# Select the priceChangePercent column and round value
 col1_percent = f'{float(round(col1_df.priceChangePercent,2))}%'
-col2_percent = f'{float(col2_df.priceChangePercent)}%'
-col3_percent = f'{float(col3_df.priceChangePercent)}%'
-col4_percent = f'{float(col4_df.priceChangePercent)}%'
-col5_percent = f'{float(col5_df.priceChangePercent)}%'
-col6_percent = f'{float(col6_df.priceChangePercent)}%'
+col2_percent = f'{float(round(col2_df.priceChangePercent,2))}%'
+col3_percent = f'{float(round(col3_df.priceChangePercent,2))}%'
+col4_percent = f'{float(round(col4_df.priceChangePercent,2))}%'
+col5_percent = f'{float(round(col5_df.priceChangePercent,2))}%'
+col6_percent = f'{float(round(col6_df.priceChangePercent,2))}%'
+
 
 
 
