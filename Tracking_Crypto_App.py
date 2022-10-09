@@ -81,8 +81,8 @@ st.write('Update at: ', t)
 
 #create a linechart
 chart_data =
-    np.random.randn(20, 3),
-    columns=['a', 'b', 'c']
+    (np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
 
 st.area_chart(chart_data)
 
