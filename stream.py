@@ -77,7 +77,7 @@ col6.metric(col6_selection, col6_price, col6_percent)
 
 #update real time
 t = datetime.now(tzinfo=pytz.timezone("UCT+7").strftime("%H:%M:%S")
-st.write('Update at: ', t)
+st.write('Update at: ', t))
 
 
 st.info("Referenced by Mr.Data Professor")
