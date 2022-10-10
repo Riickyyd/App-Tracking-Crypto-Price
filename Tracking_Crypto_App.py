@@ -85,7 +85,7 @@ st.write('Update at: ', t)
 
 #talble
 st.header ('All information')
-st.dataframe(df)
+st.dataframe(df.style.highlight_max(axis=0))
 
 #change
 st.info("Referenced by Mr.Data Professor")
