@@ -84,7 +84,7 @@ t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
 #talble
-st.header ('* All information*')
+st.header ('All information')
 st.dataframe(df)
 
 #change
