@@ -85,7 +85,7 @@ st.write('Update at: ', t)
 
 #talble
 st.header ('All information')
-st.dataframe(df.get("symbol", "priceChange", "priceChangePercent", "lastPrice"))
+st.dataframe(df.get("symbol"))
 
 #change
 st.info("Referenced by Mr.Data Professor")
