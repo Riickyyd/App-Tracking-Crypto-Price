@@ -86,7 +86,6 @@ st.write('Update at: ', t)
 #talble
 st.header ('All information')
 st.dataframe(df)
-df.get("symbol", "priceChange")
 
 
 #change
