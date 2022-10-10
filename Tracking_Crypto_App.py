@@ -13,7 +13,6 @@ st.header('**Selected Price**')
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
-    st.dataframe.after(100,df)
 
 # Custom function for rounding values
 def round_value(input_value):
