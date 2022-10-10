@@ -13,7 +13,7 @@ st.header('**Selected Price**')
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
-    df.after(100, input_value)
+    st.dataframe.afeter(100,df)
 
 # Custom function for rounding values
 def round_value(input_value):
@@ -84,6 +84,9 @@ col6.metric(col6_selection, col6_price, col6_percent)
 t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
+#talble
+st.header ('* All information*')
+st.dataframe(df)
 
 #change
 st.info("Referenced by Mr.Data Professor")
