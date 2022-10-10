@@ -85,7 +85,7 @@ st.write('Update at: ', t)
 
 #talble
 st.header ('All information')
-st.dataframe(df.style.highlight_max(axis=0))
+st.dataframe(df.get('symbol','priceChange') )
 
 #change
 st.info("Referenced by Mr.Data Professor")
