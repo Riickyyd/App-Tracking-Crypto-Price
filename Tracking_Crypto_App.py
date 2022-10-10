@@ -80,21 +80,6 @@ col6.metric(col6_selection, col6_price, col6_percent)
 t = datetime.now(pytz.timezone("EST")).strftime("%H:%M:%S")
 st.write('Update at: ', t)
 
-#create a barchart
-chart_data = pd.DataFrame(
-    np.random.randn(10, 3),
-    columns=["a", "b", "c"])
-
-st.bar_chart(chart_data)
-
-#create a linegraph
-
-chart_data = pd.DataFrame(
-    np.random.randn(10, 3),
-    columns=['a', 'b', 'c'])
-
-st.area_chart(chart_data)
-
 
 #change
 st.info("Referenced by Mr.Data Professor")
