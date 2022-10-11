@@ -8,7 +8,7 @@ from PIL import Image
 from urllib.request import urlopen
 
 
-imageBTC = Image.open(urlopen('https://img.freepik.com/premium-vector/check-out-modern-flat-illustration-cryptocurrency-app_203633-9021.jpg?w=2000'))
+imageBTC = Image.open(urlopen('https://banxa.com/wp-content/uploads/2022/05/bidgetlogo-freelogovectors.net_.png'))
 new_image = imageBTC.resize((600, 400))
 st.image(new_image)
 
