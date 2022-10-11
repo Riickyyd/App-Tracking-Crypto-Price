@@ -5,6 +5,7 @@ from datetime import datetime
 import pytz
 import numpy as np
 from PIL import Image
+from urllib.request import urlopen
 
 
 
@@ -13,6 +14,11 @@ st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
 
 st.header('**Selected Price**')
+
+st.header("Bitcoin ($)") 
+imageBTC = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
+st.image(imageBTC)
+
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
