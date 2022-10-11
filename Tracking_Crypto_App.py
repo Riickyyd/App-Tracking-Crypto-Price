@@ -8,16 +8,15 @@ from PIL import Image
 from urllib.request import urlopen
 
 
-
+imageBTC = Image.open(urlopen('https://img.freepik.com/premium-vector/check-out-modern-flat-illustration-cryptocurrency-app_203633-9021.jpg?w=2000'))
+st.image(imageBTCm, width = 40, height = 20)
 
 st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
 
 st.header('**Selected Price**')
 
-st.header("Bitcoin ($)") 
-imageBTC = Image.open(urlopen('https://img.freepik.com/premium-vector/check-out-modern-flat-illustration-cryptocurrency-app_203633-9021.jpg?w=2000'))
-st.image(imageBTC)
+
 
 
 # Load market data from Binance API
