@@ -9,7 +9,7 @@ from urllib.request import urlopen
 
 
 imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
-new_image = imageBTC.resize((100, 100))
+new_image = imageBTC.resize((200, 200))
 st.image(new_image)
 
 st.markdown('# **Tracking Cryptocurrency Price**')
