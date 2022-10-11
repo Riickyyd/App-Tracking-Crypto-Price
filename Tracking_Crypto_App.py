@@ -16,7 +16,7 @@ st.markdown('Powered by Ricky')
 st.header('**Selected Price**')
 
 st.header("Bitcoin ($)") 
-imageBTC = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
+imageBTC = Image.open(urlopen('https://img.freepik.com/premium-vector/check-out-modern-flat-illustration-cryptocurrency-app_203633-9021.jpg?w=2000'))
 st.image(imageBTC)
 
 
