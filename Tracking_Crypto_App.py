@@ -9,7 +9,7 @@ from urllib.request import urlopen
 
 
 imageBTC = Image.open(urlopen('https://img.freepik.com/premium-vector/check-out-modern-flat-illustration-cryptocurrency-app_203633-9021.jpg?w=2000'))
-st.image(imageBTC, width = 40, height = 20)
+st.image(imageBTC)
 
 st.markdown('# **Tracking Cryptocurrency Price**')
 st.markdown('Powered by Ricky')
