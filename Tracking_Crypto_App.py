@@ -8,7 +8,7 @@ from PIL import Image
 from urllib.request import urlopen
 
 
-imageBTC = Image.open(urlopen('https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/309815559_1082665952453616_5154333042017793871_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7tdyAfr-r9cAX9-Sbv7&tn=oQYOHDBlSVexmpTr&_nc_ht=scontent.fdad2-1.fna&oh=03_AVKALXumd9210O6sCqDlvGAR4L019spHjWERmkmUSuisTw&oe=636A55'))
+imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
 new_image = imageBTC.resize((100, 100))
 st.image(new_image)
 
