@@ -94,7 +94,7 @@ st.header ('All information')
 st.dataframe(df)
 
 #BTC CHART
-Btch = df.col1_percent
+Btch = col1_df.priceChangePercent
 st.bar_chart(Btch)
 
 #change
