@@ -95,14 +95,20 @@ st.write('Update at: ', t)
 st.header ('All information')
 st.dataframe(df)
 
-#btc trading volume
-def info():
-    api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=BTC&limit=10"
-    req = requests.get(api_link)
-    dic = req.json()
-    
-Btc_volume =  (dic["BTC"])
-st.bar_chart(Btc_volume)
+#defining
+Bitcoin = 'BTC-USD'
+#Acess data
+BTC_Data = yf.Ticker(Bitcoin)
+#GET history data
+BTCHis = BTC_Data.history(period="max")
+#Dataframe
+BTC = yf.download(Bitcoin, start ="2022-06-06", end = "2022-10-10")
+#BTC
+st.header("Bitcoin ($)") 
+imageBTC = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
+st.image(imageBTC)
+st.table(BTC)
+st.bar_chart(BTCHis.Close)
 
 
 #change
