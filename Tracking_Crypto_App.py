@@ -93,14 +93,6 @@ st.write('Update at: ', t)
 st.header ('All information')
 st.dataframe(df)
 
-#defining
-st.header("Bitcoin ($)") 
-imageBTC = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
-st.image(imageBTC)
-btc = yf.Ticker("BTC-USD")
-btc.info
-
-
 
 #change
 st.info("Referenced by Mr.Data Professor")
