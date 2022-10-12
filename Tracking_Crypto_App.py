@@ -94,7 +94,8 @@ st.header ('All information')
 st.dataframe(df)
 
 #BTC CHART
-st.bar_chart(df)
+Btch = df.col1_percent
+st.bar_chart(Btch)
 
 #change
 st.info("Referenced by Mr.Data Professor")
