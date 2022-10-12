@@ -6,6 +6,8 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
+import yfinance as yf
+
 
 
 imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
@@ -30,10 +32,6 @@ def round_value(input_value):
     else:
         a = float(round(input_value, 5))
     return a
-
-
-
-
 
 col1, col2, col3 = st.columns(3)
 col4, col5, col6 = st.columns(3)
@@ -95,6 +93,14 @@ st.write('Update at: ', t)
 #talble
 st.header ('All information')
 st.dataframe(df)
+
+#BTC CHART
+Bitcoin = 'BTC-USD'
+BTC_Data = yf.Ticker(Bitcoin)
+BTCHis = BTC_Data.history(period="max")
+BTC = yf.download(Bitcoin, start ="2022-06-06", end = "2022-10-10")
+st.table(BTC)
+st.bar_chart(BTCHis.Close)
 
 
 #change
