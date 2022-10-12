@@ -100,7 +100,7 @@ Btch = (col1_df.priceChangePercent,
         col4_df.priceChangePercent,
         col5_df.priceChangePercent,
         col6_df.priceChangePercent, 
-        columns=["a", "b", "c"])
+        )
 st.bar_chart(Btch)
 
 #change
