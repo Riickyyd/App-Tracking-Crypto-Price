@@ -96,7 +96,7 @@ st.header ('All information')
 st.dataframe(df)
 
 #defining
-Bitcoin = 'BTC-USD'
+Bitcoin = 'BTC-USDT'
 #Acess data
 BTC_Data = yf.Ticker(Bitcoin)
 #GET history data
