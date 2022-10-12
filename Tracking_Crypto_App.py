@@ -98,7 +98,7 @@ st.dataframe(df)
 #defining
 Bitcoin = 'BTC-USDT'
 #Acess data
-BTC_Data = yf.Ticker(Bitcoin)
+BTC_Data = yf.Ticker("Bitcoin")
 #GET history data
 BTCHis = BTC_Data.history(period="max")
 #Dataframe
