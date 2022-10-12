@@ -6,7 +6,6 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-import yfinance as yf
 
 
 
@@ -95,13 +94,7 @@ st.header ('All information')
 st.dataframe(df)
 
 #BTC CHART
-Bitcoin = 'BTC-USD'
-BTC_Data = yf.Ticker(Bitcoin)
-BTCHis = BTC_Data.history(period="max")
-BTC = yf.download(Bitcoin, start ="2022-06-06", end = "2022-10-10")
-st.table(BTC)
-st.bar_chart(BTCHis.Close)
-
+st.bar_chart(df)
 
 #change
 st.info("Referenced by Mr.Data Professor")
