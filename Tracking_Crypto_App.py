@@ -6,6 +6,8 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
+import requests
+import json
 
 
 
@@ -93,11 +95,15 @@ st.write('Update at: ', t)
 st.header ('All information')
 st.dataframe(df)
 
-#BTC CHART
-Btch = col1_df.priceChangePercent
-ethh = col2_df.priceChangePercent
-        
-st.bar_chart("Btch", "ethh")
+#btc trading volume
+def info():
+    api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=BTC&limit=10"
+    req = requests.get(api_link)
+    dic = req.json()
+    
+Btc_volume =  (dic["BTC"])
+st.bar_chart(Btc_volume)
+
 
 #change
 st.info("Referenced by Mr.Data Professor")
