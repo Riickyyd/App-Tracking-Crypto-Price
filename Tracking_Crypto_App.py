@@ -97,7 +97,7 @@ st.dataframe(df)
 Btch = col1_df.priceChangePercent
 ethh = col2_df.priceChangePercent
         
-st.bar_chart(Btch, ethh)
+st.bar_chart("Btch", "ethh")
 
 #change
 st.info("Referenced by Mr.Data Professor")
