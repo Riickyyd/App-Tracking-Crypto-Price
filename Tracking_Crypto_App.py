@@ -6,8 +6,6 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-import yfinance as yf
-
 
 imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
 new_image = imageBTC.resize((150, 150))
