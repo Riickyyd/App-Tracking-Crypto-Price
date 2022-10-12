@@ -99,7 +99,7 @@ st.dataframe(df)
 st.header("Bitcoin ($)") 
 imageBTC = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(imageBTC)
-btc = yf.Ticker("Bitcoin")
+btc = yf.Ticker("BTC-USD")
 btc.info
 
 
