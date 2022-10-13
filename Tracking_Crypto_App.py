@@ -108,7 +108,9 @@ def info():
     api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10"
     req = requests.get(api_link)
     dic = req.json()
-
+    
+    usd_value =  (dic["USD"])
+    st.bar_chart(usd_value)
 
 
 #change
