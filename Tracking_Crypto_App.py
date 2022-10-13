@@ -94,14 +94,7 @@ st.write('Update at: ', t)
 st.header ('All information')
 st.dataframe(df)
 
-#Acess data of BTC
-bitcoin = 'BTC-USD'
-st.header("Bitcoin ($)") 
-@st.cache
-BTC_Data = yfinance.Ticker(Bitcoin)
-BTCHis = BTC_Data.history(period="max")
-st.bar_chart(BTCHis.Close)
-
+st.balloons()
 
 #change
 st.info("Referenced by Mr.Data Professor")
