@@ -6,7 +6,7 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-import yfinance as yf
+import yfinance
 
 
 
@@ -98,7 +98,7 @@ st.dataframe(df)
 bitcoin = 'BTC-USD'
 st.header("Bitcoin ($)") 
 @st.cache
-BTC_Data = yf.Ticker("Bitcoin")
+BTC_Data = yfinance.Ticker(Bitcoin)
 BTCHis = BTC_Data.history(period="max")
 st.bar_chart(BTCHis.Close)
 
