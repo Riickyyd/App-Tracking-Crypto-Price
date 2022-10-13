@@ -6,7 +6,6 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-import yfinance
 
 
 
