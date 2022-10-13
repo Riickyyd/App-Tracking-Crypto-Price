@@ -6,6 +6,8 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
+import yfinance as yf
+
 
 
 
@@ -99,7 +101,6 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.line_chart(col6_df.weightedAvgPrice)
 
 
 #change
