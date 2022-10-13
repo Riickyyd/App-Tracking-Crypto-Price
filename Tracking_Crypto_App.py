@@ -98,7 +98,7 @@ st.balloons()
 #lingraph
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
-st.image(new_image2)
+st.image(image2)
 
 #change
 st.info("Referenced by Mr.Data Professor")
