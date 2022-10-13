@@ -98,7 +98,7 @@ st.dataframe(df)
 bitcoin = 'BTC-USD'
 st.header("Bitcoin ($)") 
 @st.cache
-BTC_Data = yf.Ticker(Bitcoin)
+BTC_Data = yf.Ticker("Bitcoin")
 BTCHis = BTC_Data.history(period="max")
 st.bar_chart(BTCHis.Close)
 
