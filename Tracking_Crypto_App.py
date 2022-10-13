@@ -109,7 +109,7 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
     
-st.bar_chart(df.)
+st.bar_chart(df.dic)
 
 
 #change
