@@ -109,8 +109,8 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
     
-st.bar_chart(df.dic)
-
+    volume =  (dic["USD"])
+    st.bar_chart(volume)
 
 #change
 st.info("Referenced by Mr.Data Professor")
