@@ -6,11 +6,9 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-from matplotlib.figure import Figure
-from streamlit_lottie import st_lottie
+import yfinance as yf
 
-lottie_book = load_lottieurl("https://assets4.lottiefiles.com/temp/lf20_aKAfIn.json")
-st_lottie(lottie_book, speed=1, height=200, key="initial")
+
 
 imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
 new_image = imageBTC.resize((150, 150))
@@ -95,6 +93,14 @@ st.write('Update at: ', t)
 #talble
 st.header ('All information')
 st.dataframe(df)
+
+#Acess data of BTC
+bitcoin = 'BTC-USD'
+st.header("Bitcoin ($)") 
+@st.cache
+BTC_Data = yf.Ticker(Bitcoin)
+BTCHis = BTC_Data.history(period="max")
+st.bar_chart(BTCHis.Close)
 
 
 #change
