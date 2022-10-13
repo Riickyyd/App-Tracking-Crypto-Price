@@ -109,8 +109,8 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
     
-    usd_value =  (dic["USD"])
-    st.bar_chart(usd_value)
+usd_value =  (dic["USD"])
+st.bar_chart(usd_value)
 
 
 #change
