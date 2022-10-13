@@ -103,7 +103,7 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.bar_chart( col1_percent,
+st.dataframe( col1_percent,
               col2_percent,
               col3_percent,
               col4_percent,
