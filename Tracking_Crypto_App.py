@@ -103,8 +103,7 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.dataframe(df.get("line13"))
-
+SELECT 11 FROM df;
 def info():
     api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10"
     req = requests.get(api_link)
