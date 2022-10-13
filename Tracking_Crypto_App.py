@@ -6,7 +6,6 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
-import yfinance as yf 
 
 
 
@@ -101,6 +100,8 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
+
+df = pd.read_json('https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10')
 
 
 #change
