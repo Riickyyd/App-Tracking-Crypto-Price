@@ -6,6 +6,9 @@ import pytz
 import numpy as np
 from PIL import Image
 from urllib.request import urlopen
+from matplotlib.backends.backend_agg import RendererAgg
+from matplotlib.figure import Figure
+from streamlit_lottie import st_lottie
 
 lottie_book = load_lottieurl("https://assets4.lottiefiles.com/temp/lf20_aKAfIn.json")
 st_lottie(lottie_book, speed=1, height=200, key="initial")
