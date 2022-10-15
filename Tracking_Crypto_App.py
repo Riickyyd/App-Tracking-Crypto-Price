@@ -8,6 +8,8 @@ from PIL import Image
 from urllib.request import urlopen
 import requests
 import json
+import yfinance as yf
+
 
 
 imageBTC = Image.open(urlopen('https://www.lacampionessa.com/29336-large_default/202122-juventus-fc-away-sponsor-logo-ufficiale-bitget.jpg'))
