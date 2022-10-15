@@ -8,7 +8,9 @@ from PIL import Image
 from urllib.request import urlopen
 import requests
 import json
+pip install streamlit-aggrid
 
+#theme
 backgroundColor="white"
 secondaryBackgroundColor="#F0F2F6"
 font="sans serif"
