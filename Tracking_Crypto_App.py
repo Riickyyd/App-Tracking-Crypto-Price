@@ -102,11 +102,5 @@ st.image(image2)
 st.dataframe(df.BTCUSDT)
 
 
-Bitcoin = 'BTC-USD'
-BTC_Data = yf.Ticker(Bitcoin)
-BTCHis = BTC_Data.history(period="max")
-st.header("Bitcoin ($)") 
-st.bar_chart(BTCHis.Close)
-
 #change
 st.info("Referenced by Mr.Data Professor")
