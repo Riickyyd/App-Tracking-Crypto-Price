@@ -98,15 +98,7 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.dataframe(df.get(col1))
-
-def info():
-    api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10"
-    req = requests.get(api_link)
-    dic = req.json()
-    
-    vl =  (dic["volume"])
-    st.bar_chart(vl)
+st.dataframe(col4_df.priceChangePercent)
 
 #change
 st.info("Referenced by Mr.Data Professor")
