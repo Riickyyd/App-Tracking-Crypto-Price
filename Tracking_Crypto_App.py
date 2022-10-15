@@ -8,7 +8,7 @@ from PIL import Image
 from urllib.request import urlopen
 import requests
 import json
-import yfinance
+import yf
 
 
 
