@@ -9,10 +9,8 @@ from urllib.request import urlopen
 import requests
 import json
 
-primaryColor="#F63366"
 backgroundColor="white"
 secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
 font="sans serif"
 
 
