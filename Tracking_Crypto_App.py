@@ -98,7 +98,7 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.dataframe(df.get('BTCUSDT'))
+st.dataframe(df.('BTCUSDT'))
 
 #change
 st.info("Referenced by Mr.Data Professor")
