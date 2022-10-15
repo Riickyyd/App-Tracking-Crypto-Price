@@ -10,7 +10,7 @@ import requests
 import json
 
 primaryColor="#F63366"
-backgroundColor="#FFFFFF"
+backgroundColor="white"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#262730"
 font="sans serif"
