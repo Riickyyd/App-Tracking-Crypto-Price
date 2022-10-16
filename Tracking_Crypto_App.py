@@ -105,10 +105,10 @@ image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64
 st.image(image2)
 
 @st.experimental_memo
-def load_data():
-    return pd.read_json('https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10')
-df2 = load_data('volume')
-st.line_chart(df2)
+load_data = pd.read_json('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND')
+vnd_value = load_data.VND
+st.write('Update at: ', vnd_value)
+
 
 
 #change
