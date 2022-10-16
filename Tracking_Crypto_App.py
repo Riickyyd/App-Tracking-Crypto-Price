@@ -99,8 +99,8 @@ st.dataframe(df)
 
 st.balloons()
 
-#lingraph
-st.header ('BTC $')
+#Exchange to other currencies BTC
+st.header ('BTC Exchange')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
 
@@ -118,6 +118,14 @@ def info():
     euro_formatted_value = "{:,.3f}".format(euro_value)
     st.write('Price to Euro: ', euro_formatted_value + "€")
     
+    
+#Exchange to other currencies BTC
+st.header ('ETH Exchange')
+image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'))
+st.image(image3)
+
+
+
 
 info ()
 
