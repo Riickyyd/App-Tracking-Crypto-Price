@@ -113,6 +113,10 @@ def info():
     VND_value =  (dic["VND"])
     VND_formatted_value = "{:,.3f}".format(VND_value)
     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
+    
+    euro_value =  (dic["VND"])
+    euro_formatted_value = "{:,.3f}".format(euro_value)
+    st.write('Price to Euro: ', euro_formatted_value + "€")
 
 
 info ()
