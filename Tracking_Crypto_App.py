@@ -110,13 +110,14 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
 
-    VND_value =  (dic["PRICE"])
-    VND_formatted_value = "{:,.3f}".format(VND_value)
+    VND_value =  (dic["VND"])
+    VNd_price =   VND_value.get(PRICE)
+    VND_formatted_value = "{:,.3f}".format(VNd_price)
     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
     
-    euro_value =  (dic["PRICE"])
-    euro_formatted_value = "{:,.3f}".format(euro_value)
-    st.write('Price to Euro: ', euro_formatted_value + "€")
+#     euro_value =  (dic["PRICE"])
+#     euro_formatted_value = "{:,.3f}".format(euro_value)
+#     st.write('Price to Euro: ', euro_formatted_value + "€")
 
 info ()
 
