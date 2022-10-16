@@ -112,7 +112,7 @@ def info():
     dic = req.json()
 
     
-    VND_value = (dic[str("BTC")])
+    VND_value = (pandas.DataFrame("BTC"))
     st.dataframe(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
