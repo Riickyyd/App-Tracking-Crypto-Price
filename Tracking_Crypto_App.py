@@ -124,25 +124,20 @@ info ()
 st.header ('ETH Exchange')
 image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'))
 st.image(image3)
-def info2():
+def info_1():
     api_link = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
-    req2 = requests.get(api_link)
-    dic2 = req.json()
+    req_2 = requests.get(api_link)
+    dic_2 = req.json()
 
-    VND_value1 =  (dic2["VND"])
-    VND_formatted_value1 = "{:,.3f}".format(VND_value1)
-    st.write('Price to VNĐ: ', VND_formatted_value1 + "đ")
+    VND_value_1 =  (dic_2["VND"])
+    VND_formatted_value_1 = "{:,.3f}".format(VND_value_1)
+    st.write('Price to VNĐ: ', VND_formatted_value_1 + "đ")
     
-    euro_value1 =  (dic2["EUR"])
-    euro_formatted_value1 = "{:,.3f}".format(euro_value)
-    st.write('Price to Euro: ', euro_formatted_value1 + "€")
+    euro_value_1 =  (dic_2["EUR"])
+    euro_formatted_value_1 = "{:,.3f}".format(euro_value)
+    st.write('Price to Euro: ', euro_formatted_value_1 + "€")
 
-info2 ()
-
-
-
-
-
+info_1 ()
 
 
 
