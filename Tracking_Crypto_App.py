@@ -111,7 +111,7 @@ def info():
     dic = req.json()
     
     
-    VND_value = (dic["Display"])
+    VND_value = (dic["DISPLAY"])
     st.table(VND_value)
 
 #     VND_value =  (dic.get("PRICE"))
