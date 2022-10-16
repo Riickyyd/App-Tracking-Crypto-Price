@@ -107,12 +107,11 @@ st.image(image2)
 @st.experimental_memo
 def info():
 #     api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=EUR,VND"
-    api_link = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=EUR,VND"
+    api_link = "https://min-api.cryptocompare.com/data/exchange/histoday?tsym=BTC&limit=10"
     req = requests.get(api_link)
     dic = req.json()
-
     
-    VND_value = (dic["BTC"])
+    VND_value =  (dic["Data"])
     st.dataframe(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
