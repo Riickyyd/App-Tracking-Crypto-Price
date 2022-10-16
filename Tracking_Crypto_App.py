@@ -112,7 +112,7 @@ def info():
     dic = req.json()
 
     
-    VND_value = (dic["BTC"])
+    VND_value = (dic["BTC"["VND"]])
     st.write(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
