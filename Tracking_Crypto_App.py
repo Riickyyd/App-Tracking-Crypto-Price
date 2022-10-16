@@ -117,17 +117,34 @@ def info():
     euro_value =  (dic["EUR"])
     euro_formatted_value = "{:,.3f}".format(euro_value)
     st.write('Price to Euro: ', euro_formatted_value + "€")
-    
-    
+
+info ()
+
 #Exchange to other currencies BTC
 st.header ('ETH Exchange')
 image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'))
 st.image(image3)
+def info2():
+    api_link = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
+    req2 = requests.get(api_link)
+    dic2 = req.json()
+
+    VND_value1 =  (dic2["VND"])
+    VND_formatted_value1 = "{:,.3f}".format(VND_value1)
+    st.write('Price to VNĐ: ', VND_formatted_value1 + "đ")
+    
+    euro_value1 =  (dic2["EUR"])
+    euro_formatted_value1 = "{:,.3f}".format(euro_value)
+    st.write('Price to Euro: ', euro_formatted_value1 + "€")
+
+info2 ()
 
 
 
 
-info ()
+
+
+
 
 #change
 st.info("Referenced by Mr.Data Professor")
