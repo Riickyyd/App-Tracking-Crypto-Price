@@ -103,7 +103,11 @@ st.balloons()
 st.header ('BTC $')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
-st.pie_chart(df.priceChangePercent)
+
+@st.experimental_memo
+def load_data():
+    return pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
+df = load_data()
 
 
 #change
