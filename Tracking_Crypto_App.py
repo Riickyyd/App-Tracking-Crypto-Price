@@ -113,7 +113,7 @@ def info():
 
     
     VND_value = (dic["BTC"])
-    st.dataframe(VND_value)
+    st.dataframe(pd.VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
 #     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
