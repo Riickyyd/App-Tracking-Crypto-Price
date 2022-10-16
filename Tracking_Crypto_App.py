@@ -105,7 +105,7 @@ image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64
 st.image(image2)
 
 @st.experimental_memo
-load_data = pd.read_json('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND')
+df2 = pd.read_json('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND')
 vnd_value = load_data.VND
 st.write('Update at: ', vnd_value)
 
