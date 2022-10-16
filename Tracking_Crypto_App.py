@@ -107,7 +107,7 @@ st.image(image2)
 @st.experimental_memo
 def load_data():
     return pd.read_json('https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10')
-df2 = load_data(volume)
+df2 = load_data('volume')
 st.line_chart(df2)
 
 
