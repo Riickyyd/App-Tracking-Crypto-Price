@@ -112,7 +112,8 @@ def info():
     
     
     VND_value = (dic["DISPLAY"])
-    st.table(VND_value)
+    VND_trade = VND_value['PRICE']
+    st.table(VND_trade)
 
 #     VND_value =  (dic.get("PRICE"))
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
