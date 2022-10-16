@@ -109,10 +109,12 @@ def info():
     api_link = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=VND,EUR"
     req = requests.get(api_link)
     dic = req.json()
+    
+    st.dataframe(dic)
 
-    VND_value =  (dic.get("PRICE"))
-    VND_formatted_value = "{:,.3f}".format(VND_value)
-    st.write('Price to VNĐ: ', VND_formatted_value + "đ")
+#     VND_value =  (dic.get("PRICE"))
+#     VND_formatted_value = "{:,.3f}".format(VND_value)
+#     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
     
 #     euro_value =  (dic["PRICE"])
 #     euro_formatted_value = "{:,.3f}".format(euro_value)
