@@ -113,7 +113,7 @@ def info():
 
     
     VND_value = (dic["BTC"])
-    vnd = pd.DataFrame(np.VND_value)
+    vnd = pd.DataFrame(VND_value)
     st.dataframe(vnd)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
