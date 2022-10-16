@@ -112,7 +112,7 @@ def info():
     
     
     VND_value = (dic["RAW"])
-    st.dataframe(VND_value)
+    st.write(VND_value)
 
 #     VND_value =  (dic.get("PRICE"))
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
