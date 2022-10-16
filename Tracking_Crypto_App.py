@@ -106,7 +106,7 @@ st.image(image2)
 
 @st.experimental_memo
 def info():
-    api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND"
+    api_link = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=EUR,VND"
     req = requests.get(api_link)
     dic = req.json()
 
@@ -119,26 +119,6 @@ def info():
     st.write('Price to Euro: ', euro_formatted_value + "€")
 
 info ()
-
-#Exchange to other currencies BTC
-st.header ('ETH Exchange')
-image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'))
-st.image(image3)
-
-def inform():
-    api_link_1 = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
-    req_2 = requests.get(api_link_1)
-    dic_2 = req.json()
-
-    VND_value_1 =  (dic_2["VND"])
-    VND_formatted_value_1 = "{:,.3f}".format(VND_value_1)
-    st.write('Price to VNĐ: ', VND_formatted_value_1 + "đ")
-    
-    euro_value_1 =  (dic_2["EUR"])
-    euro_formatted_value_1 = "{:,.3f}".format(euro_value)
-    st.write('Price to Euro: ', euro_formatted_value_1 + "€")
-
-inform()
 
 
 
