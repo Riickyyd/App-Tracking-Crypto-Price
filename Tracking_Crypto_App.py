@@ -117,7 +117,7 @@ def info():
     
     euro_value =  (dic["EUR"])
     euro_formatted_value = "{:,.3f}".format(euro_value)
-    st.table('Price to Euro: ', euro_formatted_value + "€")
+    st.dataframe('Price to Euro: ', euro_formatted_value + "€")
 
 info ()
 
