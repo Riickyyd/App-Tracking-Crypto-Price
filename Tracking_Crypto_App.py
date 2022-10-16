@@ -110,7 +110,7 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
     
-    st.dataframe(dic.get(display))
+    st.dataframe(dic.get(RAW))
 
 #     VND_value =  (dic.get("PRICE"))
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
