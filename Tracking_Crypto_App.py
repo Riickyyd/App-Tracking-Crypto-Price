@@ -111,8 +111,8 @@ def info():
     dic = req.json()
     
     
-    VND_value = (dic["RAW"])
-    st.text(VND_value)
+    VND_value = (dic["Display"])
+    st.table(VND_value)
 
 #     VND_value =  (dic.get("PRICE"))
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
