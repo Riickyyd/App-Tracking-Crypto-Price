@@ -112,7 +112,7 @@ def info():
     dic = req.json()
     
     VND_value =  (dic["RAW"])
-    st.table(VND_value)
+    st.dataframe(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
 #     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
