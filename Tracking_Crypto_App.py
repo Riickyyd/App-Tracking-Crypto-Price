@@ -126,8 +126,8 @@ image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64
 st.image(image3)
 
 def inform():
-    api_link1 = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
-    req_2 = requests.get(api_link)
+    api_link_1 = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
+    req_2 = requests.get(api_link_1)
     dic_2 = req.json()
 
     VND_value_1 =  (dic_2["VND"])
