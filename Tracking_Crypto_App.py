@@ -124,7 +124,8 @@ info ()
 st.header ('ETH Exchange')
 image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'))
 st.image(image3)
-def info_1():
+
+def info():
     api_link = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,VND"
     req_2 = requests.get(api_link)
     dic_2 = req.json()
@@ -137,7 +138,7 @@ def info_1():
     euro_formatted_value_1 = "{:,.3f}".format(euro_value)
     st.write('Price to Euro: ', euro_formatted_value_1 + "€")
 
-info_1 ()
+info()
 
 
 
