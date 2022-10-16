@@ -105,11 +105,17 @@ image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64
 st.image(image2)
 
 @st.experimental_memo
-df2 = pd.read_json('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND')
-vnd_value = load_data.VND
-st.write('Update at: ', vnd_value)
+def info():
+    api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,VND"
+    req = requests.get(api_link)
+    dic = req.json()
+
+    VND_value =  (dic["VND"])
+    VND_formatted_value = "{:,.3f}".format(VND_value)
+    st.write('Update at: ', VND_formatted_value)
 
 
+info ()
 
 #change
 st.info("Referenced by Mr.Data Professor")
