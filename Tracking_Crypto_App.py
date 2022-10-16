@@ -113,11 +113,13 @@ def info():
 
     VND_value =  (dic["VND"])
     VND_formatted_value = "{:,.3f}".format(VND_value)
-    st.table('Price to VNĐ: ', VND_formatted_value + "đ")
+    vnd = ('Price to VNĐ: ', VND_formatted_value + "đ")
     
     euro_value =  (dic["EUR"])
     euro_formatted_value = "{:,.3f}".format(euro_value)
-    st.dataframe('Price to Euro: ', euro_formatted_value + "€")
+    euro = ('Price to Euro: ', euro_formatted_value + "€")
+    
+    st.table(vnd,euro)
 
 info ()
 
