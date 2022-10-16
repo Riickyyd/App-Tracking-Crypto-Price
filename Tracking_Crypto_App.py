@@ -118,8 +118,6 @@ def info():
     euro_formatted_value = "{:,.3f}".format(euro_value)
     st.write('Price to Euro: ', euro_formatted_value + "€")
     
-    VND_formatted_value.after(100, info)
-
 
 info ()
 
