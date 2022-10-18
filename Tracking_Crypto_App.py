@@ -109,9 +109,9 @@ def info():
 #     api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=EUR,VND"
     api_link = "https://min-api.cryptocompare.com/data/exchange/symbol/histoday?fsym=BTC&tsym=USD&limit=10&e=Binance"
     req = requests.get(api_link)
-    dic = req.json()
+    list = req.json()
     
-    VND_value =  (dic["Data"])
+    VND_value =  (list["Data"])
     st.text(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
