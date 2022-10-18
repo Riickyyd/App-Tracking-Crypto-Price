@@ -107,7 +107,7 @@ st.image(image2)
 @st.experimental_memo
 def info():
 #     api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=EUR,VND"
-    api_link = "https://min-api.cryptocompare.com/data/exchange/symbol/histoday?fsym=BTC&tsym=USD&limit=10&e=Binance"
+    api_link = "https://min-api.cryptocompare.com/data/tradingsignals/intotheblock/latest?fsym=BTC"
     req = requests.get(api_link)
     list = req.json()
     
