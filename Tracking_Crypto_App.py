@@ -111,7 +111,7 @@ def info():
     req = requests.get(api_link)
     dic = req.json()
     
-    VND_value =  (dic["BTC Trading Pairs"])
+    VND_value =  (dic["Data"])
     st.dataframe(VND_value)
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
