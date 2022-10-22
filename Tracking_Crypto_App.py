@@ -139,4 +139,4 @@ def info2():
 info2 ()
 
 #change
-st.info("Referenced by Mr.Data Professor")
+st.info("Referenced by Bitget ")
