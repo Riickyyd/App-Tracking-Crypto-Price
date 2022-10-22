@@ -124,12 +124,12 @@ def info():
     
 info ()
 
-st.header ('BTC Pair Volume')
-image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
-st.image(image2)
+st.header ('USDT Pair Volume')
+image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/825.png'))
+st.image(image3)
 
 def info2():
-    api_link = "https://min-api.cryptocompare.com/data/top/volumes?tsym=BTC"
+    api_link = "https://min-api.cryptocompare.com/data/top/volumes?tsym=USDT"
     req = requests.get(api_link)
     dic = req.json()
     
