@@ -121,7 +121,6 @@ def info():
 #     euro_formatted_value = "{:,.3f}".format(euro_value)
 #     st.write('Price to Euro: ', euro_formatted_value + "€")
     
- 
 info ()
 
 
