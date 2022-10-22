@@ -100,7 +100,7 @@ st.dataframe(df)
 st.balloons()
 
 #Exchange to other currencies BTC
-st.header ('BTC Exchange')
+st.header ('BTC Pair Volume')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
 
