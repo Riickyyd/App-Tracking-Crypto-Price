@@ -104,26 +104,39 @@ st.header ('BTC Pair Volume')
 image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
 st.image(image2)
 
-@st.experimental_memo
+
+#check pair volume
 def info():
-#     api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=EUR,VND"
     api_link = "https://min-api.cryptocompare.com/data/top/volumes?tsym=BTC"
     req = requests.get(api_link)
     dic = req.json()
     
     VND_value =  (dic["Data"])
     st.dataframe(VND_value)
+    
+#     api_link = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=EUR,VND"
 #     VND_value =  (dic["VND"])
 #     VND_formatted_value = "{:,.3f}".format(VND_value)
-#     st.write('Price to VNĐ: ', VND_formatted_value + "đ")
-    
+#     st.write('Price to VNĐ: ', VND_formatted_value + "đ") 
 #     euro_value =  (dic["EUR"])
 #     euro_formatted_value = "{:,.3f}".format(euro_value)
 #     st.write('Price to Euro: ', euro_formatted_value + "€")
     
 info ()
 
+st.header ('BTC Pair Volume')
+image2 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'))
+st.image(image2)
 
+def info2():
+    api_link = "https://min-api.cryptocompare.com/data/top/volumes?tsym=BTC"
+    req = requests.get(api_link)
+    dic = req.json()
+    
+    VND_value =  (dic["Data"])
+    st.dataframe(VND_value)
+    
+info2 ()
 
 #change
 st.info("Referenced by Mr.Data Professor")
