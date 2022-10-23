@@ -145,7 +145,7 @@ image4 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/exchanges/6
 st.image(image4)
 
 def info3():
-    api_link = "https://min-api.cryptocompare.com/data/tradingsignals/intotheblock/latest?fsym=BTC"
+    api_link = "https://min-api.cryptocompare.com/data/v2/news/?lang=EN"
     req = requests.get(api_link)
     dic2 = req.json()
     
