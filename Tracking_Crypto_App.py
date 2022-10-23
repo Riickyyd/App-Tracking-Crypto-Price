@@ -134,7 +134,7 @@ def info2():
     dic = req.json()
     
     VND_value =  (dic["Data"])
-    st.bar_chart(VND_value)
+    st.vega_lite_chart(VND_value)
     
 info2 ()
 
