@@ -124,6 +124,7 @@ def info():
     
 info ()
 
+#USDT pair
 st.header ('USDT Pair Volume')
 image3 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/coins/64x64/825.png'))
 st.image(image3)
@@ -134,9 +135,25 @@ def info2():
     dic = req.json()
     
     VND_value =  (dic["Data"])
-    st.vega_lite_chart(VND_value)
+    st.dataframe(VND_value)
     
 info2 ()
+
+#Trading Signals Latest
+st.header ('Trading Signals')
+image4 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/exchanges/64x64/513.png'))
+st.image(image4)
+
+def info3():
+    api_link = "https://min-api.cryptocompare.com/data/tradingsignals/intotheblock/latest?fsym=BTC"
+    req = requests.get(api_link)
+    dic2 = req.json()
+    
+    VND_value =  (dic2["Data"])
+    st.dataframe(VND_value)
+    
+info3 ()
+
 
 #change
 st.info("Referenced by Bitget ")
