@@ -140,7 +140,7 @@ def info2():
 info2 ()
 
 #Trading Signals Latest
-st.header ('Trading Signals')
+st.header ('Trading News')
 image4 = Image.open(urlopen('https://s2.coinmarketcap.com/static/img/exchanges/64x64/513.png'))
 st.image(image4)
 
